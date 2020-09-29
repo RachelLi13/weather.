@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather.</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+
+    <header class="nav-header">
+      <h1><a href="./index.html" id="logo">weather.</a></h1>
+      <ul>
+        <li><a href="#second-slide">Current</a></li>
+        <li><a href="#third-slide">Forecast</a></li>
+      </ul>
+    </header>
+
+      <section class="first slide">
+        <div class="hero-img">
+          <img src="./img/noaa-Y7GUOQ83OMg-unsplash.jpg" alt="sky image" />
+          <div class="reveal-img"></div>
+        </div>
+        <div class="hero-desc">
+          <div class="title">
+            <h2>
+              The weather at your <span class="first-span">fingertips.</span>
+            </h2>
+            <div class="title-swipe t-swipe1"></div>
+          </div>
+          <p class="intro">
+            Discover all you need to know about the weather with the click of a button.
+            Information from current temperature to cloudiness
+          </p>
+          <a href="#second-slide" class="explore">Explore</a>
+          <div class="reveal-text"></div>
+        </div>
+      </section>
+      <section id='second-slide' class="second slide">
+        <div class="hero-img">
+          <img src="./img/osman-rana-GXEZuWo5m4I-unsplash.jpg" alt="rain" />
+          <div class="reveal-img"></div>
+        </div>
+        <div class="hero-desc">
+          <div class="title">
+            <h2>Current <span class="second-span">weather.</span></h2>
+          </div>
+          <p class='intro' id='extra'>
+            Click to discover basic information tailored to your location.
+          </p>
+          <div class="current-weather"></div>
+          <a class="explore second-btn">Click me</a>
+          <div class="reveal-text"></div>
+        </div>
+      </section>
+      <section id='third-slide' class="third slide">
+        <div class="hero-img">
+          <img src="./img/billy-huynh-v9bnfMCyKbg-unsplash.jpg" alt="clouds" />
+          <div class="reveal-img"></div>
+        </div>
+        <div class="hero-desc">
+          <div class="title">
+            <h2>
+              Additional <span class="third-span">information.</span>
+            </h2>
+          </div>
+            <p class='intro' id='extra'>
+              Click to discover additional information such as humidity
+            </p>
+          <div class="extra-info"></div>
+          <a class="explore third-btn">Click Me</a>
+          <div class="reveal-text"></div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+      integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"
+      integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
+      integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
+      integrity="sha256-3arngJBQR3FTyeRtL3muAGFaGcL8iHsubYOqq48mBLw="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./animations.js"></script>
+    <script src="./api.js"></script>
+  </body>
+</html>
